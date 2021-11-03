@@ -3,8 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package edu.nwmissouri.saikrishna04lab;
-
+package edu.nwmissouri.zoo05group;
 /**
  *
  * @author Saikrishna Vuppala
