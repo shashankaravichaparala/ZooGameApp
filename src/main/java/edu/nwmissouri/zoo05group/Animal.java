@@ -26,7 +26,7 @@ public abstract class Animal {
      *
      * @param name - the name of this instance of an animal
      */
-    public Animal(String name) {
+    protected Animal(String name) {
         this.name = name;
         this.gender = AnimalGender.UNKNOWN;
 
