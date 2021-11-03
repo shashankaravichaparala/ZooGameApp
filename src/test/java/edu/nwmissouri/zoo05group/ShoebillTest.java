@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit5TestClass.java to edit this template
  */
-package edu.nwmissouri.zoo04lab;
+package edu.nwmissouri.zoo05group;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
