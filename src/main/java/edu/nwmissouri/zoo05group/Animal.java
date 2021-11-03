@@ -1,4 +1,4 @@
-package edu.nwmissouri.zoo04lab;
+package edu.nwmissouri.zoo05group;
 
 /**
  * Animal super class for traits shared by all animals. Abstract - don't make a
@@ -26,7 +26,7 @@ public abstract class Animal {
      *
      * @param name - the name of this instance of an animal
      */
-    public Animal(String name) {
+    protected Animal(String name) {
         this.name = name;
         this.gender = AnimalGender.UNKNOWN;
 

@@ -1,4 +1,4 @@
-package edu.nwmissouri.zoo04lab;
+package edu.nwmissouri.zoo05group;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;

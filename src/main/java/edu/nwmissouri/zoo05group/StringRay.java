@@ -3,7 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package edu.nwmissouri.zoo04lab;
+
+
+
+package edu.nwmissouri.zoo05group;
 
 /**
  * Provides methods to create and run a group of StringRay.

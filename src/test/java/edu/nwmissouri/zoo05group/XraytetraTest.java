@@ -11,16 +11,16 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 /**
- * Test Floppy using JUnit5
+ * Test Xraytetra using JUnit5 
  *
- * @author S545243 Satheesh Eppalapelli
+ * @author Shashankaravi Chaparala
  */
-public class FloppyTest {
+public class XraytetraTest {
 
     private final PrintStream standardOut = System.out;
     private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
 
-    public FloppyTest() {
+    public XraytetraTest() {
     }
 
     @BeforeAll
@@ -41,57 +41,57 @@ public class FloppyTest {
     }
 
     /**
-     * Test of speak method, of class Floppy.
+     * Test of speak method, of class Xraytetra.
      *
      * @throws java.lang.Exception
      */
     @Test
     public void testSpeak() throws Exception {
-        String expected = "I'm an Floppy! I'm a pet of Satheesh.";
-        var floppy = new Floppy("Satheesh");
-        floppy.speak();
+        String expected = "I am Xraytetra";
+        var Xraytetra = new Xraytetra("Allie");
+        Xraytetra.speak();
         String actual = outputStreamCaptor.toString().trim();
         assertEquals(expected, actual);
     }
 
     /**
-     * Test of move method, of class Floppy.
+     * Test of move method, of class Xraytetra.
      *
      * @throws java.lang.Exception
      */
     @Test
     public void testMove() throws Exception {
-        String expected = "When I move, I walk, walk, walk.";
-        var floppy = new Floppy("Satheesh");
-        floppy.move();
+        String expected = "I can swim";
+        var Xraytetra = new Xraytetra("Allie");
+         Xraytetra.move();
         String actual = outputStreamCaptor.toString().trim();
         assertEquals(expected, actual);
     }
 
     /**
-     * Test of location method, of class Floppy.
+     * Test of location method, of class Xraytetra.
      *
      * @throws java.lang.Exception
      */
     @Test
     public void testLocation() throws Exception {
         String expected = "I live in water!";
-        var floppy = new Floppy("Satheesh");
-        floppy.location();
+        var xraytetra = new Xraytetra("Shashankaravi");
+        xraytetra.location();
         String actual = outputStreamCaptor.toString().trim();
         assertEquals(expected, actual);
     }
 
     /**
-     * Test of character method, of class Floppy.
+     * Test of character method, of class Xraytetra.
      *
      * @throws java.lang.Exception
      */
     @Test
     public void testCharacter() throws Exception {
-        String expected = "The Floppy Fish has a base of different shades of blue with yellow fins, and a yellow tail.";
-        var floppy = new Floppy("Satheesh");
-        floppy.character();
+        String expected = "The xraytetra has a base of different shades of yellow tail.";
+        var xraytetra = new Xraytetra("Shashankaravi");
+        xraytetra.character();
         String actual = outputStreamCaptor.toString().trim();
         assertEquals(expected, actual);
     }
@@ -102,7 +102,7 @@ public class FloppyTest {
      * @throws Exception
      */
     @Test
-    public void testFloppyAddition() throws Exception {
+    public void testXraytetraAddition() throws Exception {
 
         // set up test, figure out expected by hand
         double first = 5.0;
@@ -110,8 +110,8 @@ public class FloppyTest {
         double expected = 15.0;
 
         // call function to get the actual
-        var floppy = new Floppy("Satheesh");
-        double actual = floppy.getFloppyAddition(first, second);
+        var xraytetra = new Xraytetra("Shashankaravi");
+        double actual = xraytetra.getXraytetraAddition(first, second);
 
         // assertEquals(expected, actual);
         assertEquals(expected, actual);

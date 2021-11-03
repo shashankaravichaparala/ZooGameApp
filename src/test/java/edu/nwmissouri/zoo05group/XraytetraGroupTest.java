@@ -13,13 +13,13 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Test Floppy Group.
- *
- * @author S545243 Satheesh Eppalapelli
+ * Test Xraytetra Group.
+ * 
+ * @author Shashankaravi Chaparala
  */
-public class FloppyGroupTest {
+public class XraytetraGroupTest {
 
-    public FloppyGroupTest() {
+    public XraytetraGroupTest() {
     }
 
     @BeforeAll
@@ -39,22 +39,22 @@ public class FloppyGroupTest {
     }
 
     /**
-     * Test of create method, of class FloppyGroup.
+     * Test of create method, of class XraytetraGroup.
      */
     @Test
     public void testGroupCreate() {
         int expectedSize = 3;
-        int actualSize = FloppyGroup.create();
+        int actualSize = XraytetraGroup.create();
         assertEquals(expectedSize, actualSize);
     }
 
     /**
-     * Test of run method, of class FloppyGroup.
+     * Test of run method, of class XraytetraGroup.
      */
     @Test
     public void testGroupRun() {
-        FloppyGroup.create();
-        FloppyGroup.run();
+        XraytetraGroup.create();
+        XraytetraGroup.run();
         assertTrue(true);
     }
 
