@@ -100,26 +100,38 @@ public class ZooIndexController {
                 BingoGroup.run();
             }
             case 4 -> {
+                CarromsGroup.create();
+                CarromsGroup.run();
+            }
+            case 5 -> {
                 FloppyGroup.create();
                 FloppyGroup.run();
             }
-            case 5 -> {
+            case 6 -> {
+                MonopolyGroup.create();
+                MonopolyGroup.run();
+            }
+            case 7 -> {
                 RabbitGroup.create();
                 RabbitGroup.run();
             }
-            case 6 -> {
+            case 8 -> {
                 ShoebillGroup.create();
                 ShoebillGroup.run();
             }
-            case 7 -> {
+            case 9 -> {
                 StagGroup.create();
                 StagGroup.run();
             }
-            case 8 -> {
+            case 10 -> {
                 StringRayGroup.create();
                 StringRayGroup.run();
             }
-            case 9 -> {
+            case 11 -> {
+                UnoGroup.create();
+                UnoGroup.run();
+            }
+            case 12 -> {
                 XraytetraGroup.create();
                 XraytetraGroup.run();
             }
