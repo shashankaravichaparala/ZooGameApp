@@ -22,10 +22,10 @@ public class RowingGroup {
     public static int create() {
         myGroup = new ArrayList<>();
 
-        Rowing a = new Rowing("Aquatic", 2);
+        Rowing a = new Rowing("vizag", 2);
         myGroup.add(a);
-        myGroup.add(new Rowing("Soil", 2));
-        myGroup.add(new Rowing("Himalayas", 2));
+        myGroup.add(new Rowing("sea", 2));
+        myGroup.add(new Rowing("tirupathi", 2));
 
         return myGroup.size();
     }
@@ -34,7 +34,7 @@ public class RowingGroup {
      * Run (simulate) the group doing things
      */
     public static void run() {
-        System.out.println("BBBBBBBBBBBBBBBBBBBBBBBBBB");
+        System.out.println("RRRRRRRRRRRRRRRRRRRRRRRRRR");
         System.out.println("Hey - look at the Rowing Game!");
         myGroup.forEach(Rowing -> {
             Rowing.game("Rowing");
@@ -45,7 +45,7 @@ public class RowingGroup {
             Rowing.scoring();
         });
         System.out.println("Nice Rowing - that was fun!");
-        System.out.println("BBBBBBBBBBBBBBBBBBBBBBBBBB");
+        System.out.println("RRRRRRRRRRRRRRRRRRRRRRRRR");
     }
 
 }

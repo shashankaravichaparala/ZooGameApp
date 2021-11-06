@@ -22,10 +22,10 @@ public class FencingGroup {
     public static int create() {
         myGroup = new ArrayList<>();
 
-        Fencing a = new Fencing("Aquatic", 2);
+        Fencing a = new Fencing("sagar", 2);
         myGroup.add(a);
-        myGroup.add(new Fencing("Soil", 2));
-        myGroup.add(new Fencing("Himalayas", 2));
+        myGroup.add(new Fencing("water", 2));
+        myGroup.add(new Fencing("Hampi", 2));
 
         return myGroup.size();
     }
@@ -34,7 +34,7 @@ public class FencingGroup {
      * Run (simulate) the group doing things
      */
     public static void run() {
-        System.out.println("BBBBBBBBBBBBBBBBBBBBBBBBBB");
+        System.out.println("RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR");
         System.out.println("Hey - look at the Fencing Game!");
         myGroup.forEach(fencing -> {
             fencing.game("Fencing");
@@ -45,7 +45,7 @@ public class FencingGroup {
             fencing.scoring();
         });
         System.out.println("Nice Fencing - that was fun!");
-        System.out.println("BBBBBBBBBBBBBBBBBBBBBBBBBB");
+        System.out.println("RRRRRRRRRRRRRRRRRRRRRRRRRRRRRR");
     }
 
 }
