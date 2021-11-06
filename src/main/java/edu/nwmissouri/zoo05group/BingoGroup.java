@@ -34,7 +34,7 @@ public class BingoGroup {
         System.out.println("BBBBBBBBBBBBBBBBBBBBBBBBBB");
         System.out.println("Hey - look at the Bingo Game!");
         myGroup.forEach(bingo -> {
-        bingo.game();
+        bingo.game("Bingo");
         bingo.players();
         bingo.rules();
         bingo.play();
