@@ -67,7 +67,9 @@ public class GameApp {
                 System.out.print("7.Uno            ");
                 System.out.print("8.Golf            ");
                 System.out.print("9.Sequence            ");
-                System.out.print("10.DogAndBone            \n");
+                System.out.print("10.DogAndBone            ");
+                System.out.print("11.Fencing             ");
+                System.out.print("12.Rowing             \n");
                 System.out.println("-----------------------------");
                 try {
                     typeNumberInput = scanner.nextInt();
@@ -119,6 +121,14 @@ public class GameApp {
                     case 10 -> {
                         DogAndBoneGroup.create();
                         DogAndBoneGroup.run();
+                    }
+                    case 11 -> {
+                        FencingGroup.create();
+                        FencingGroup.run();
+                    }
+                    case 12 -> {
+                        RowingGroup.create();
+                        RowingGroup.run();
                     }
                     default -> {
                     }

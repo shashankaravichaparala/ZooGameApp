@@ -20,6 +20,10 @@ SoftBall.java
 SoftBallGroup.java
 Uno.java
 UnoGroup.java
+Rowing.java
+RowingGroup.java
+Fencing.java
+FencingGroup.java
 ZooApp.java
 ZooBuildSwitch.java
 ZooCheckFiles.java

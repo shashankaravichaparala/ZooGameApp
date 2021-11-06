@@ -191,6 +191,14 @@ public class ZooIndexController {
                 UnoGroup.create();
                 UnoGroup.run();
             }
+            case 12 -> {
+                FencingGroup.create();
+                FencingGroup.run();
+            }
+            case 13 -> {
+                RowingGroup.create();
+                RowingGroup.run();
+            }
             default -> {
             }
         }
@@ -201,4 +209,5 @@ public class ZooIndexController {
         String stringOutput = newStream.toString();
         return stringOutput;
     }
+
 }
