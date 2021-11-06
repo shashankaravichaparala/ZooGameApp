@@ -8,7 +8,7 @@ package edu.nwmissouri.zoo05group;
  *
  * @author S545243 Satheesh Eppalapelli
  */
-public class Bingo extends AbstractGame implements Runnable {
+public class Bingo extends AbstractGame {
 
 
     /**
@@ -23,8 +23,6 @@ public class Bingo extends AbstractGame implements Runnable {
     /**
      *
      * @param game_name
-     *
-     *
      * call this play() method to see which game you are playing.
      */
     @Override
@@ -36,7 +34,7 @@ public class Bingo extends AbstractGame implements Runnable {
      * call this player() method to see how many number of players are playing.
      */
     public void players() {
-        System.out.printf("Playing Badminton with %s\n", this.number_of_players);
+        System.out.printf("Playing Bingo with %s\n", this.number_of_players);
     }
 
     /**
@@ -76,6 +74,10 @@ public class Bingo extends AbstractGame implements Runnable {
         System.out.println("Bingo is a game of probability in which players mark off numbers on cards as the numbers are drawn randomly by a caller, the winner being the first person to mark off all their numbers.");
     }
 
+     void game() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+     
     /**
      * Main method
      *
@@ -104,9 +106,5 @@ public class Bingo extends AbstractGame implements Runnable {
         this.play();
         this.skill();
         this.scoring();
-    }
-
-    void game() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

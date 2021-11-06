@@ -22,8 +22,6 @@ public class Badminton extends AbstractGame {
     /**
      *
      * @param game_name
-     * @param name
-     * @return name
      *
      * call this play() method to see which game you are playing.
      */
