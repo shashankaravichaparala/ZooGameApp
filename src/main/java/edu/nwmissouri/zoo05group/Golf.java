@@ -34,7 +34,7 @@ public class Golf extends AbstractGame {
      * call this player() method to see how many number of players are playing.
      */
     public void players() {
-       System.out.printf("Playing Monopoly with %s\n", this.number_of_players);
+       System.out.printf("Playing Golf with %s\n", this.number_of_players);
     }
 
     /**
