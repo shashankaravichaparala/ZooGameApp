@@ -18,7 +18,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class ZooIndexController {
 
-    private static final String GREETING_MESSAGE = "Welcome to our 542 Zoo!";
+    private static final String GREETING_MESSAGE_ZOO = "Welcome to our 542 Zoo App!";
+    private static final String GREETING_MESSAGE_GAME = "Welcome to our 542 Zoo Game Zone!";
     private static final String GOODBYE_MESSAGE = "Thank you for visiting our zoo!";
     private static final int NUMBER_ANIMAL_TYPES = 60;
 
@@ -38,7 +39,7 @@ public class ZooIndexController {
             Model model) {
         model.addAttribute("id", idParam);
         model.addAttribute("name", "World");
-        model.addAttribute("greeting", GREETING_MESSAGE);
+        model.addAttribute("greeting", GREETING_MESSAGE_ZOO);
         model.addAttribute("animalMap", ZooBuildSwitch.getAllAnimalMap());
         model.addAttribute("customAnimalGroup", getCustomAnimalGroup(idParam));
         // associated with index.hmtl in src/main/resources/templates
@@ -66,7 +67,7 @@ public class ZooIndexController {
             Model model) {
         model.addAttribute("id", idParam);
         model.addAttribute("name", "World");
-        model.addAttribute("greeting", GREETING_MESSAGE);
+        model.addAttribute("greeting", GREETING_MESSAGE_GAME);
         model.addAttribute("gameMap", ZooBuildSwitch.getAllGameMap());
         model.addAttribute("customGameGroup", getCustomGameGroup(idParam));
         // associated with index.hmtl in src/main/resources/templates
