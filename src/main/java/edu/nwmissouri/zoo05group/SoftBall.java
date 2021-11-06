@@ -6,8 +6,8 @@ package edu.nwmissouri.zoo05group;
 
 /**
  *
- * @author S545040 Sai krishna Vuppala */
-
+ * @author S545040 Sai krishna Vuppala
+ */
 public class SoftBall extends AbstractGame {
 
     /**
@@ -29,7 +29,7 @@ public class SoftBall extends AbstractGame {
      */
     @Override
     public void game(String game_name) {
-          System.out.printf("I Like to play %s. \n", this.game_name);
+        System.out.printf("I Like to play %s. \n", this.game_name);
     }
 
     /**
@@ -54,7 +54,7 @@ public class SoftBall extends AbstractGame {
      */
     @Override
     public void skill() {
-        System.out.printlnThe skills required for softball are: throwing, catching, hitting for contact, hitting for power, and running");
+        System.out.println("The skills required for softball are : throwingcatching, hitting for contact, hitting for power, and running");
 
     }
 
@@ -65,7 +65,6 @@ public class SoftBall extends AbstractGame {
     @Override
     public void rules() {
         System.out.println("TEach team bats once in each innings. A batter must successfully strike the ball and run around, Once they get all the way around and back to home plate without being given out a run is Scored. The fielding team can prevent the batsmen by making them miss the ball, catching the ball, tagging one of the bases before they reach. A home run can be scored by hitting the ball over the outfield and into a dead ball area ");
-
     }
 
     /**
