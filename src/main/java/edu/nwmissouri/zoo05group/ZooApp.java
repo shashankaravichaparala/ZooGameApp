@@ -56,13 +56,15 @@ public class ZooApp {
                 System.out.println();
                 System.out.println("What animals would you like to see?");
                 System.out.println("Enter a number to choose, 0 to exit.");
-                System.out.print("1.Aardvark            ");
-                System.out.print("2.Floppy              ");
-                System.out.print("3.Rabbit              ");
-                System.out.print("4.Shoebill            ");
-                System.out.print("5.Stag                ");
-                System.out.print("6.StringRay           ");
-                System.out.print("7.Xraytetra           ");
+                System.out.print(" 1.Aardvark            ");
+                System.out.print(" 2.Badminton           ");
+                System.out.print(" 3.Bingo               ");
+                System.out.println(" 4.Floppy              ");
+                System.out.print(" 5.Rabbit              ");
+                System.out.print(" 6.Shoebill            ");
+                System.out.print(" 7.Stag                ");
+                System.out.println(" 8.StringRay           ");
+                System.out.print(" 9.Xraytetra           ");
                 try {
                     typeNumberInput = scanner.nextInt();
                 } catch (Exception ex) {
@@ -79,26 +81,34 @@ public class ZooApp {
                         AardvarkGroup.run();
                     }
                     case 2 -> {
+                        BadmintonGroup.create();
+                        BadmintonGroup.run();
+                    }
+                    case 3 -> {
+                        BingoGroup.create();
+                        BingoGroup.run();
+                    }
+                    case 4 -> {
                         FloppyGroup.create();
                         FloppyGroup.run();
                     }
-                    case 3 -> {
+                    case 5 -> {
                         RabbitGroup.create();
                         RabbitGroup.run();
                     }
-                    case 4 -> {
+                    case 6 -> {
                         ShoebillGroup.create();
                         ShoebillGroup.run();
                     }
-                    case 5 -> {
+                    case 7 -> {
                         StagGroup.create();
                         StagGroup.run();
                     }
-                    case 6 -> {
+                    case 8 -> {
                         StringRayGroup.create();
                         StringRayGroup.run();
                     }
-                    case 7 -> {
+                    case 9 -> {
                         XraytetraGroup.create();
                         XraytetraGroup.run();
                     }

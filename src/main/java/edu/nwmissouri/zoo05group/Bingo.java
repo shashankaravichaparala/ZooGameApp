@@ -8,26 +8,28 @@ package edu.nwmissouri.zoo05group;
  *
  * @author S545243 Satheesh Eppalapelli
  */
-public abstract class Bingo extends AbstractGame {
+public class Bingo extends AbstractGame implements Runnable {
+
 
     /**
      *
      * @param game_name
      * @param number_of_players
      */
-    Bingo(String game_name, int number_of_players) {
+    public Bingo(String game_name, int number_of_players) {
         super(game_name, number_of_players);
     }
 
     /**
      *
-     * @param name
-     * @return name
+     * @param game_name
+     *
      *
      * call this play() method to see which game you are playing.
      */
-    public String game(String name) {
-        return name;
+    @Override
+    public void game(String game_name) {
+        System.out.printf("Playing %s\n", this.game_name);
     }
 
     /**
@@ -72,5 +74,39 @@ public abstract class Bingo extends AbstractGame {
     @Override
     public void scoring() {
         System.out.println("Bingo is a game of probability in which players mark off numbers on cards as the numbers are drawn randomly by a caller, the winner being the first person to mark off all their numbers.");
+    }
+
+    /**
+     * Main method
+     *
+     * @param args
+     */
+    public static void main(String[] args) {
+        Bingo bingo = new Bingo("Bingo", 2);
+        bingo.game("Bingo");
+        bingo.players();
+        bingo.rules();
+        bingo.play();
+        bingo.skill();
+        bingo.scoring();
+
+    }
+
+    /**
+     * An instance of an Bingo is now Runnable - call this run() method to
+     * see all the Bingo tricks.
+     */
+    @Override
+    public void run() {
+        this.game();
+        this.players();
+        this.rules();
+        this.play();
+        this.skill();
+        this.scoring();
+    }
+
+    void game() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

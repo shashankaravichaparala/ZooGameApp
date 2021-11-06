@@ -22,34 +22,18 @@ public abstract class AbstractGame implements Runnable {
      * @param game_name
      * @param number_of_players
      */
-    AbstractGame(String game_name, int number_of_players) {
+    protected AbstractGame(String game_name, int number_of_players) {
         this.game_name = game_name;
-        this.number_of_players = number_of_players;
-    }
-
-    public String getGame_name() {
-        return game_name;
-    }
-
-    public void setGame_name(String game_name) {
-        this.game_name = game_name;
-    }
-
-    public int getNumber_of_players() {
-        return number_of_players;
-    }
-
-    public void setNumber_of_players(int number_of_players) {
         this.number_of_players = number_of_players;
     }
 
     /**
      *
      * @param name
-     * @return
+     * 
      */
-    public String game(String name) {
-        return name;
+    public void game(String game_name) {
+        System.out.printf("I Like to play %s. \n", this.game_name);
     }
 
     /**

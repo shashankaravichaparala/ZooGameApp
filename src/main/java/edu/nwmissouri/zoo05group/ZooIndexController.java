@@ -87,33 +87,39 @@ public class ZooIndexController {
         var intID = Integer.parseInt(id);
 
         switch (intID) {
-
             case 1 -> {
                 AardvarkGroup.create();
                 AardvarkGroup.run();
             }
-
             case 2 -> {
+                BadmintonGroup.create();
+                BadmintonGroup.run();
+            }
+            case 3 -> {
+                BingoGroup.create();
+                BingoGroup.run();
+            }
+            case 4 -> {
                 FloppyGroup.create();
                 FloppyGroup.run();
             }
-            case 3 -> {
+            case 5 -> {
                 RabbitGroup.create();
                 RabbitGroup.run();
             }
-            case 4 -> {
+            case 6 -> {
                 ShoebillGroup.create();
                 ShoebillGroup.run();
             }
-            case 5 -> {
+            case 7 -> {
                 StagGroup.create();
                 StagGroup.run();
             }
-            case 6 -> {
+            case 8 -> {
                 StringRayGroup.create();
                 StringRayGroup.run();
             }
-            case 7 -> {
+            case 9 -> {
                 XraytetraGroup.create();
                 XraytetraGroup.run();
             }

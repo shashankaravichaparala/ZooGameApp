@@ -8,26 +8,28 @@ package edu.nwmissouri.zoo05group;
  *
  * @author S545243 Satheesh Eppalapelli
  */
-public abstract class Badminton extends AbstractGame {
+public class Badminton extends AbstractGame {
 
     /**
      *
      * @param game_name
      * @param number_of_players
      */
-    Badminton(String game_name, int number_of_players) {
+    public Badminton(String game_name, int number_of_players) {
         super(game_name, number_of_players);
     }
 
     /**
      *
+     * @param game_name
      * @param name
      * @return name
      *
      * call this play() method to see which game you are playing.
      */
-    public String game(String name) {
-        return name;
+    @Override
+    public void game(String game_name) {
+          System.out.printf("I Like to play %s. \n", this.game_name);
     }
 
     /**
@@ -75,11 +77,44 @@ public abstract class Badminton extends AbstractGame {
         System.out.println("Each game is played to 21 points, with players scoring a point whenever they win a rally regardless of whether they served (this differs from the old system where players could only win a point on their serve and each game was played to 15 points). A match is the best of three games.");
     }
 
+    void game() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public enum stockes {
         SERVES,
         CLEARS,
         SMASHES,
         DRIVES,
         DROPS;
+    }
+
+    /**
+     * Main method
+     *
+     * @param args
+     */
+    public static void main(String[] args) {
+        Badminton badminton = new Badminton("Badminton", 2);
+        badminton.game("Badminton");
+        badminton.players();
+        badminton.rules();
+        badminton.play();
+        badminton.skill();
+        badminton.scoring();
+    }
+
+    /**
+     * An instance of an Badminton is now Runnable - call this run() method to
+     * see all the Badminton tricks.
+     */
+    @Override
+    public void run() {
+        this.game();
+        this.players();
+        this.rules();
+        this.play();
+        this.skill();
+        this.scoring();
     }
 }
