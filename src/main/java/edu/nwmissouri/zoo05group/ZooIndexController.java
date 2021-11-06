@@ -104,34 +104,54 @@ public class ZooIndexController {
                 CarromsGroup.run();
             }
             case 5 -> {
+                DogAndBoneGroup.create();
+                DogAndBoneGroup.run();
+            }
+            case 6 -> {
                 FloppyGroup.create();
                 FloppyGroup.run();
             }
-            case 6 -> {
+            case 7 -> {
+                GolfGroup.create();
+                GolfGroup.run();
+            }
+            case 8 -> {
                 MonopolyGroup.create();
                 MonopolyGroup.run();
             }
-            case 7 -> {
+            case 9 -> {
                 RabbitGroup.create();
                 RabbitGroup.run();
             }
-            case 8 -> {
+            case 10 -> {
+                ScavengerHuntGroup.create();
+                ScavengerHuntGroup.run();
+            }
+            case 11 -> {
+                SequenceGroup.create();
+                SequenceGroup.run();
+            }
+            case 12 -> {
                 ShoebillGroup.create();
                 ShoebillGroup.run();
             }
-            case 9 -> {
+            case 13 -> {
+                SoftBallGroup.create();
+                SoftBallGroup.run();
+            }
+            case 14 -> {
                 StagGroup.create();
                 StagGroup.run();
             }
-            case 10 -> {
+            case 15 -> {
                 StringRayGroup.create();
                 StringRayGroup.run();
             }
-            case 11 -> {
+            case 16 -> {
                 UnoGroup.create();
                 UnoGroup.run();
             }
-            case 12 -> {
+            case 17 -> {
                 XraytetraGroup.create();
                 XraytetraGroup.run();
             }

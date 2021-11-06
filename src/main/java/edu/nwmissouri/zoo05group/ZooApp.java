@@ -58,14 +58,19 @@ public class ZooApp {
                 System.out.print(" 2.Badminton           ");
                 System.out.print(" 3.Bingo               ");
                 System.out.println(" 4.Carroms             ");
-                System.out.print(" 5.Floppy              ");
-                System.out.print(" 6.Monopoly            ");
-                System.out.print(" 7.Rabbit              ");
-                System.out.println(" 8.Shoebill            ");
-                System.out.print(" 9.Stag                ");
-                System.out.print("10.StringRay           ");
-                System.out.print("11.Uno                 ");
-                System.out.println("12.Xraytetra           ");
+                System.out.print(" 5.DogAndBone          ");
+                System.out.print(" 6.Floppy              ");
+                System.out.print(" 7.Golf                ");
+                System.out.println(" 8.Monopoly            ");
+                System.out.print(" 9.Rabbit              ");
+                System.out.print("10.ScavengerHunt       ");
+                System.out.print("11.Sequence            ");
+                System.out.println("12.Shoebill            ");
+                System.out.print("13.SoftBall            ");
+                System.out.print("14.Stag                ");
+                System.out.print("15.StringRay           ");
+                System.out.println("16.Uno                 ");
+                System.out.print("17.Xraytetra           ");
                 try {
                     typeNumberInput = scanner.nextInt();
                 } catch (Exception ex) {
@@ -94,34 +99,54 @@ public class ZooApp {
                         CarromsGroup.run();
                     }
                     case 5 -> {
+                        DogAndBoneGroup.create();
+                        DogAndBoneGroup.run();
+                    }
+                    case 6 -> {
                         FloppyGroup.create();
                         FloppyGroup.run();
                     }
-                    case 6 -> {
+                    case 7 -> {
+                        GolfGroup.create();
+                        GolfGroup.run();
+                    }
+                    case 8 -> {
                         MonopolyGroup.create();
                         MonopolyGroup.run();
                     }
-                    case 7 -> {
+                    case 9 -> {
                         RabbitGroup.create();
                         RabbitGroup.run();
                     }
-                    case 8 -> {
+                    case 10 -> {
+                        ScavengerHuntGroup.create();
+                        ScavengerHuntGroup.run();
+                    }
+                    case 11 -> {
+                        SequenceGroup.create();
+                        SequenceGroup.run();
+                    }
+                    case 12 -> {
                         ShoebillGroup.create();
                         ShoebillGroup.run();
                     }
-                    case 9 -> {
+                    case 13 -> {
+                        SoftBallGroup.create();
+                        SoftBallGroup.run();
+                    }
+                    case 14 -> {
                         StagGroup.create();
                         StagGroup.run();
                     }
-                    case 10 -> {
+                    case 15 -> {
                         StringRayGroup.create();
                         StringRayGroup.run();
                     }
-                    case 11 -> {
+                    case 16 -> {
                         UnoGroup.create();
                         UnoGroup.run();
                     }
-                    case 12 -> {
+                    case 17 -> {
                         XraytetraGroup.create();
                         XraytetraGroup.run();
                     }
