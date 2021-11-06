@@ -5,9 +5,10 @@
 package edu.nwmissouri.zoo05group;
 
 /**
- *
+ * @return enum
  * @author S545243
  */
+
 public enum AnimalGender {
     UNKNOWN,
     FEMALE,

@@ -11,7 +11,6 @@ import java.util.Collections;
 import java.util.Map;
 import java.util.TreeMap;
 
-
 /**
  * Build our switch statement so we can see all the animals.
  *
@@ -21,6 +20,7 @@ public class ZooBuildSwitch {
 
     private static final String relativePathToPackage = "/src/main/java/edu/nwmissouri/zoo05group";
     private static final String nonAnimalsFileString = "SOURCE_NON_ANIMAL_FILES.txt";
+    private static final String nonGameFileString = "SOURCE_NON_GAME_FILES.txt";
 
     public static Map<Integer, String> getAllAnimalMap() {
 
@@ -36,7 +36,7 @@ public class ZooBuildSwitch {
         int n = 1;
         // keep keys in order with TreeMap and be thread safe for deployment
         Map animalMap = Collections.synchronizedMap(new TreeMap<Integer, String>());
-        
+
         // process the list and load the map
         for (String file : filesArray) {
             if (!ignoreList.contains(file)) {
@@ -46,11 +46,43 @@ public class ZooBuildSwitch {
                 var justName = file.substring(0, fileNameLength);
                 if (justName.endsWith("Group")) {
                     var animal = justName.replace("Group", "");
-                   animalMap.put(n++, animal);
+                    animalMap.put(n++, animal);
                 }
             }
         }
         return animalMap;
+    }
+
+    public static Map<Integer, String> getAllGameMap() {
+
+        // find the files that should be excluded
+        ArrayList<String> ignoreList = getNonCustomGameFiles();
+        
+//        ArrayList<String> gameList = new ArrayList<String>(Arrays.asList("Badmintion", "Bingo", "Golf","Monoplay","ScavengerHunt","Sequence","Softball","Uno"));
+        // process all found files, outputing custom animal code
+        File fileFolder = new File(getCustomGamePackagePathString());
+        String[] filesArray = fileFolder.list();
+        Arrays.sort(filesArray);
+
+        // create local variables for n and animalMap (a data structure)
+        int n = 1;
+        // keep keys in order with TreeMap and be thread safe for deployment
+        Map gameMap = Collections.synchronizedMap(new TreeMap<Integer, String>());
+
+        // process the list and load the map
+        for (String file : filesArray) {
+            if (!ignoreList.contains(file)) {
+                int fileLength = file.length();
+                int lengthExtension = ".java".length();
+                int fileNameLength = fileLength - lengthExtension;
+                var justName = file.substring(0, fileNameLength);
+                if (justName.endsWith("Group")) {
+                    var animal = justName.replace("Group", "");
+                    gameMap.put(n++, animal);
+                }
+            }
+        }
+        return gameMap;
     }
 
     public static void main(String args[]) throws IOException {
@@ -140,6 +172,15 @@ public class ZooBuildSwitch {
     }
 
     /**
+     * Get a list of expected files in the root project directory.
+     *
+     * @return String[] of expected file names
+     */
+    private static ArrayList<String> getNonCustomGameFiles() {
+        return getFileLines(nonGameFileString);
+    }
+
+    /**
      * Get our project package path as a String.
      *
      * @return project package String
@@ -151,6 +192,16 @@ public class ZooBuildSwitch {
         return projectPathString;
     }
 
-    
+    /**
+     * Get our project package path as a String.
+     *
+     * @return project package String
+     */
+    private static String getCustomGamePackagePathString() {
+        Path projectPath = Paths.get("").toAbsolutePath();
+        String projectPathString = projectPath.normalize().toString() + relativePathToPackage;
+        System.out.println(projectPathString);
+        return projectPathString;
+    }
 
 }

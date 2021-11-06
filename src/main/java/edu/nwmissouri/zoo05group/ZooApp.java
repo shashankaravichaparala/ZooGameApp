@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class ZooApp {
 
     // Specify welcome message
-    private static final String GREETING_MESSAGE = "Welcome to our 542 Zoo!";
+    private static final String GREETING_MESSAGE = "Welcome to our 542 Zoo App!";
 
     // Specify how to exit message
     private static final String ESCAPE_MESSAGE = "Hit Q to exit.";
@@ -53,24 +53,15 @@ public class ZooApp {
             // do the list prompt for the first time, loop back while valid
             do {
                 // Prompt for type: ask if they want to see animals
-                System.out.println();
-                System.out.print(" 1.Aardvark            ");
-                System.out.print(" 2.Badminton           ");
-                System.out.print(" 3.Bingo               ");
-                System.out.println(" 4.Carroms             ");
-                System.out.print(" 5.DogAndBone          ");
-                System.out.print(" 6.Floppy              ");
-                System.out.print(" 7.Golf                ");
-                System.out.println(" 8.Monopoly            ");
-                System.out.print(" 9.Rabbit              ");
-                System.out.print("10.ScavengerHunt       ");
-                System.out.print("11.Sequence            ");
-                System.out.println("12.Shoebill            ");
-                System.out.print("13.SoftBall            ");
-                System.out.print("14.Stag                ");
-                System.out.print("15.StringRay           ");
-                System.out.println("16.Uno                 ");
-                System.out.print("17.Xraytetra           ");
+                System.out.println("-------------------------");
+                System.out.print("1.Aardvark            ");
+                System.out.print("2.Floppy              ");
+                System.out.print("3.Rabbit              ");
+                System.out.print("4.Shoebill            ");
+                System.out.print("5.Stag                ");
+                System.out.print("6.StringRay           ");
+                System.out.print("7.Xraytetra           \n");
+                System.out.println("-------------------------");
                 try {
                     typeNumberInput = scanner.nextInt();
                 } catch (Exception ex) {
@@ -87,66 +78,26 @@ public class ZooApp {
                         AardvarkGroup.run();
                     }
                     case 2 -> {
-                        BadmintonGroup.create();
-                        BadmintonGroup.run();
-                    }
-                    case 3 -> {
-                        BingoGroup.create();
-                        BingoGroup.run();
-                    }
-                    case 4 -> {
-                        CarromsGroup.create();
-                        CarromsGroup.run();
-                    }
-                    case 5 -> {
-                        DogAndBoneGroup.create();
-                        DogAndBoneGroup.run();
-                    }
-                    case 6 -> {
                         FloppyGroup.create();
                         FloppyGroup.run();
                     }
-                    case 7 -> {
-                        GolfGroup.create();
-                        GolfGroup.run();
-                    }
-                    case 8 -> {
-                        MonopolyGroup.create();
-                        MonopolyGroup.run();
-                    }
-                    case 9 -> {
+                    case 3 -> {
                         RabbitGroup.create();
                         RabbitGroup.run();
                     }
-                    case 10 -> {
-                        ScavengerHuntGroup.create();
-                        ScavengerHuntGroup.run();
-                    }
-                    case 11 -> {
-                        SequenceGroup.create();
-                        SequenceGroup.run();
-                    }
-                    case 12 -> {
+                    case 4 -> {
                         ShoebillGroup.create();
                         ShoebillGroup.run();
                     }
-                    case 13 -> {
-                        SoftBallGroup.create();
-                        SoftBallGroup.run();
-                    }
-                    case 14 -> {
+                    case 5 -> {
                         StagGroup.create();
                         StagGroup.run();
                     }
-                    case 15 -> {
+                    case 6 -> {
                         StringRayGroup.create();
                         StringRayGroup.run();
                     }
-                    case 16 -> {
-                        UnoGroup.create();
-                        UnoGroup.run();
-                    }
-                    case 17 -> {
+                    case 7 -> {
                         XraytetraGroup.create();
                         XraytetraGroup.run();
                     }

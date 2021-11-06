@@ -57,17 +57,18 @@ public class GameApp {
 // do the list prompt for the first time, loop back while valid
             do {
 // Prompt for type: ask if they want to see games
-                System.out.println();
-                System.out.println(" 1.SoftBall ");
-                System.out.println(" 2.Badminton ");
-                System.out.println(" 3.Bingo ");
-                System.out.println(" 4.Carroms ");
-                System.out.println(" 5.ScavengerHunt ");
-                System.out.println(" 6.Monopoly ");
-                System.out.println(" 7.Uno ");
-                System.out.println(" 8.Golf ");
-                System.out.println(" 9.Sequence ");
-                System.out.println("10.DogAndBone ");
+                System.out.println("-----------------------------");
+                System.out.print("1.SoftBall            ");
+                System.out.print("2.Badminton            ");
+                System.out.print("3.Bingo            ");
+                System.out.print("4.Carroms            ");
+                System.out.print("5.ScavengerHunt            ");
+                System.out.print("6.Monopoly            ");
+                System.out.print("7.Uno            ");
+                System.out.print("8.Golf            ");
+                System.out.print("9.Sequence            ");
+                System.out.print("10.DogAndBone            \n");
+                System.out.println("-----------------------------");
                 try {
                     typeNumberInput = scanner.nextInt();
                 } catch (Exception ex) {

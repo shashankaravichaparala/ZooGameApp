@@ -61,7 +61,15 @@ public class ZooIndexController {
      * @return filename from src/main/resources/templates folder
      */
     @GetMapping(path = "/games")
-    public String games() {
+    public String games(
+            @RequestParam(name = "id", required = false, defaultValue = "0") String idParam,
+            Model model) {
+        model.addAttribute("id", idParam);
+        model.addAttribute("name", "World");
+        model.addAttribute("greeting", GREETING_MESSAGE);
+        model.addAttribute("gameMap", ZooBuildSwitch.getAllGameMap());
+        model.addAttribute("customGameGroup", getCustomGameGroup(idParam));
+        // associated with index.hmtl in src/main/resources/templates
         return "games";
     }
 
@@ -92,68 +100,95 @@ public class ZooIndexController {
                 AardvarkGroup.run();
             }
             case 2 -> {
-                BadmintonGroup.create();
-                BadmintonGroup.run();
-            }
-            case 3 -> {
-                BingoGroup.create();
-                BingoGroup.run();
-            }
-            case 4 -> {
-                CarromsGroup.create();
-                CarromsGroup.run();
-            }
-            case 5 -> {
-                DogAndBoneGroup.create();
-                DogAndBoneGroup.run();
-            }
-            case 6 -> {
                 FloppyGroup.create();
                 FloppyGroup.run();
             }
-            case 7 -> {
-                GolfGroup.create();
-                GolfGroup.run();
-            }
-            case 8 -> {
-                MonopolyGroup.create();
-                MonopolyGroup.run();
-            }
-            case 9 -> {
+            case 3 -> {
                 RabbitGroup.create();
                 RabbitGroup.run();
             }
-            case 10 -> {
-                ScavengerHuntGroup.create();
-                ScavengerHuntGroup.run();
-            }
-            case 11 -> {
-                SequenceGroup.create();
-                SequenceGroup.run();
-            }
-            case 12 -> {
+            case 4 -> {
                 ShoebillGroup.create();
                 ShoebillGroup.run();
             }
-            case 13 -> {
-                SoftBallGroup.create();
-                SoftBallGroup.run();
-            }
-            case 14 -> {
+            case 5 -> {
                 StagGroup.create();
                 StagGroup.run();
             }
-            case 15 -> {
+            case 6 -> {
                 StringRayGroup.create();
                 StringRayGroup.run();
             }
-            case 16 -> {
-                UnoGroup.create();
-                UnoGroup.run();
-            }
-            case 17 -> {
+            case 7 -> {
                 XraytetraGroup.create();
                 XraytetraGroup.run();
+            }
+            default -> {
+            }
+        }
+
+        // Put things back
+        System.out.flush();
+        System.setOut(old);
+        String stringOutput = newStream.toString();
+        return stringOutput;
+    }
+
+    private String getCustomGameGroup(String id) {
+        // Create a stream to hold the output
+        var newStream = new ByteArrayOutputStream();
+        var newPrintStream = new PrintStream(newStream);
+        // IMPORTANT: Save the old System.out!
+        PrintStream old = System.out;
+        // Tell Java to use your special stream
+        System.setOut(newPrintStream);
+
+        var intID = Integer.parseInt(id);
+
+        switch (intID) {
+            case 1 -> {
+                BadmintonGroup.create();
+                BadmintonGroup.run();
+            }
+            case 2 -> {
+                BingoGroup.create();
+                BingoGroup.run();
+            }
+            case 3 -> {
+                CarromsGroup.create();
+                CarromsGroup.run();
+            }
+            case 4 -> {
+                DogAndBoneGroup.create();
+                DogAndBoneGroup.run();
+            }
+            case 5 -> {
+                GolfGroup.create();
+                GolfGroup.run();
+            }
+            case 6 -> {
+                MonopolyGroup.create();
+                MonopolyGroup.run();
+            }
+            case 7 -> {
+                ScavengerHuntGroup.create();
+                ScavengerHuntGroup.run();
+            }
+            case 8 -> {
+                SequenceGroup.create();
+                SequenceGroup.run();
+            }
+            case 9 -> {
+                SoftBallGroup.create();
+                SoftBallGroup.run();
+            }
+            case 10 -> {
+                StagGroup.create();
+                StagGroup.run();
+            }
+            case 11 -> {
+                UnoGroup.create();
+                UnoGroup.run();
             }
             default -> {
             }
