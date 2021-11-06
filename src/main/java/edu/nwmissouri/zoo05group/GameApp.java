@@ -9,7 +9,7 @@ import java.util.Scanner;
 /**
  * ZooApp is a Game simulation created by Group05 Section 05.
  *
- * @author Rahul Konda, Keerthana, Gayatri, SaiKrishna and Sathish
+ * @author Rahul Konda, Keerthana, Gayatri, SaiKrishna, Sathish and shashank
  */
 public class GameApp {
 
@@ -23,7 +23,7 @@ public class GameApp {
     private static final String GOODBYE_MESSAGE = "Thank you for visiting our GameZone!";
 
 // specify number of animal types available
-    private static final int NUMBER_GAME_TYPES = 10;
+    private static final int NUMBER_GAME_TYPES = 20;
 
     /**
      * This main() method is the entry point for our application.
@@ -58,16 +58,16 @@ public class GameApp {
             do {
 // Prompt for type: ask if they want to see games
                 System.out.println();
-                System.out.print(" 1.SoftBall ");
-                System.out.print(" 2.Badminton ");
-                System.out.print(" 3.Bingo ");
+                System.out.println(" 1.SoftBall ");
+                System.out.println(" 2.Badminton ");
+                System.out.println(" 3.Bingo ");
                 System.out.println(" 4.Carroms ");
-                System.out.print(" 5.ScavengerHunt ");
-                System.out.print(" 6.Monopoly ");
-                System.out.print(" 7.Uno ");
+                System.out.println(" 5.ScavengerHunt ");
+                System.out.println(" 6.Monopoly ");
+                System.out.println(" 7.Uno ");
                 System.out.println(" 8.Golf ");
-                System.out.print(" 9.Sequence ");
-                System.out.print("10.dogAndBone ");
+                System.out.println(" 9.Sequence ");
+                System.out.println("10.DogAndBone ");
                 try {
                     typeNumberInput = scanner.nextInt();
                 } catch (Exception ex) {
