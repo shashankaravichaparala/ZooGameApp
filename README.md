@@ -1,9 +1,10 @@
-# ZooApp
+# ZooGameApp
 Zoo simulation with games.
 
-# API
-* Explore API at 
-* Generate API with  ``mvn javadoc:javadoc``
+## API
+
+- Explore API at <https://satheesheppalapelli.github.io/ZooGameApp/edu/nwmissouri/zoo05group/package-summary.html>
+- Generate API with `mvn javadoc:javadoc`
 
 # pom.xml
 
