@@ -26,7 +26,7 @@ public class ZooBuildSwitch {
 
         // find the files that should be excluded
         ArrayList<String> ignoreList = getNonCustomAnimalFiles();
-
+        
         // process all found files, outputing custom animal code
         File fileFolder = new File(getCustomAnimalPackagePathString());
         String[] filesArray = fileFolder.list();

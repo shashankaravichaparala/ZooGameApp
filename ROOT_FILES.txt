@@ -1,0 +1,14 @@
+.git
+.gitignore
+docs
+src
+target
+pom.xml
+licenseheader.txt
+nb-configuration.xml
+nbactions.xml
+LICENSE.md
+README.md
+ROOT_FILES.txt
+SOURCE_NON_ANIMAL_FILES.txt
+SOURCE_NON_GAME_FILES.txt
