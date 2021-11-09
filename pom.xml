@@ -180,17 +180,9 @@
             <plugin>
                 <groupId>com.heroku.sdk</groupId>
                 <artifactId>heroku-maven-plugin</artifactId>
-                <version>3.0.2</version>
+                <version>3.0.3</version>
                 <configuration>
                     <appName>zoogameapp</appName>
-                    <includeTarget>false</includeTarget>
-                    <includes>
-                        <include>${full-artifact-name}</include>
-                    </includes>
-                    <jdkVersion>1.8</jdkVersion>
-                    <processTypes>
-                        <web>java $JAVA_OPTS -jar ${full-artifact-name}</web>
-                    </processTypes>
                 </configuration>
             </plugin>
             
