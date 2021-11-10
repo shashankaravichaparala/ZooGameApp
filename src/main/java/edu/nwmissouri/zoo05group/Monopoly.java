@@ -62,7 +62,7 @@ public class Monopoly extends AbstractGame {
      */
     @Override
     public void rules() {
-        System.out.println("1. Each player chooses one token to represent them while traveling around the board \\n 2.Each player is given $1500 \\n 3. Select someone as banker. If this person also plays, then he must keep his personal funds \\n 4. Then each player places his token on the corner marked GO and throw the dice and move his the number of spaces indicated by the dice.");
+        System.out.println("1. Each player chooses one token to represent them while traveling around the board \n 2.Each player is given $1500 \n 3. Select someone as banker. If this person also plays, then he must keep his personal funds \n 4. Then each player places his token on the corner marked GO and throw the dice and move his the number of spaces indicated by the dice.");
 
     }
 
