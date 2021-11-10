@@ -1,6 +1,8 @@
 # ZooGameApp
 Zoo simulation with games.
 
+[![Known Vulnerabilities](https://snyk.io/test/github/satheesheppalapelli/ZooGameApp/badge.svg)](https://snyk.io/test/github/satheesheppalapelli/ZooGameApp)
+
 ## API
 
 - Explore API at <https://satheesheppalapelli.github.io/ZooGameApp/edu/nwmissouri/zoo05group/package-summary.html>
