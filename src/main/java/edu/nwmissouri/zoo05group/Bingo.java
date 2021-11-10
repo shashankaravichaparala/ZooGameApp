@@ -8,7 +8,7 @@ package edu.nwmissouri.zoo05group;
  *
  * @author S545243 Satheesh Eppalapelli
  */
-public class Bingo extends AbstractGame {
+public class Bingo extends AbstractGame implements Runnable {
 
 
     /**

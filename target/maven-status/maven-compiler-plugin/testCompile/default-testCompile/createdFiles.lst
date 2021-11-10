@@ -1,3 +1,4 @@
+edu\nwmissouri\zoo05group\MonopolyTest.class
 edu\nwmissouri\zoo05group\XraytetraTest.class
 edu\nwmissouri\zoo05group\StagTest.class
 edu\nwmissouri\zoo05group\RabbitTest.class
@@ -12,6 +13,7 @@ edu\nwmissouri\zoo05group\ShoebillTest.class
 edu\nwmissouri\zoo05group\BingoGroupTest.class
 edu\nwmissouri\zoo05group\GolfTest.class
 edu\nwmissouri\zoo05group\ShoebillGroupTest.class
+edu\nwmissouri\zoo05group\MonopolyGroupTest.class
 edu\nwmissouri\zoo05group\FloppyTest.class
 edu\nwmissouri\zoo05group\GolfGroupTest.class
 edu\nwmissouri\zoo05group\BingoTest.class
