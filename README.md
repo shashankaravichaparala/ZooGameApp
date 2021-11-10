@@ -2,6 +2,7 @@
 Zoo simulation with games.
 
 [![Known Vulnerabilities](https://snyk.io/test/github/satheesheppalapelli/ZooGameApp/badge.svg)](https://snyk.io/test/github/satheesheppalapelli/ZooGameApp)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/51c43cd1ed734ac3af4c9576280f0208)](https://www.codacy.com/gh/satheesheppalapelli/ZooGameApp/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=satheesheppalapelli/ZooGameApp&amp;utm_campaign=Badge_Grade)
 
 ## API
 
