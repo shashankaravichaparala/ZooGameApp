@@ -10,22 +10,22 @@ public abstract class AbstractGame implements Runnable {
      * Every game has a name. Class variable name is not private, but protected
      * - only subclasses can use it.
      */
-<span class="nc" id="L13">    protected String game_name = &quot;no name&quot;;</span>
+<span class="fc" id="L13">    protected String game_name = &quot;no name&quot;;</span>
      /**
      * Every game has a players. Class variable number_ofPlayers is not private, but protected
      * - only subclasses can use it.
      */
-<span class="nc" id="L18">    protected int number_of_players = 0;</span>
+<span class="fc" id="L18">    protected int number_of_players = 0;</span>
 
     /**
      *
      * @param game_name
      * @param number_of_players
      */
-<span class="nc" id="L25">    protected AbstractGame(String game_name, int number_of_players) {</span>
-<span class="nc" id="L26">        this.game_name = game_name;</span>
-<span class="nc" id="L27">        this.number_of_players = number_of_players;</span>
-<span class="nc" id="L28">    }</span>
+<span class="fc" id="L25">    protected AbstractGame(String game_name, int number_of_players) {</span>
+<span class="fc" id="L26">        this.game_name = game_name;</span>
+<span class="fc" id="L27">        this.number_of_players = number_of_players;</span>
+<span class="fc" id="L28">    }</span>
 
     /**
      *
