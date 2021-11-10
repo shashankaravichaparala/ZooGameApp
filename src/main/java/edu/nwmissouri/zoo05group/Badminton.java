@@ -5,10 +5,11 @@
 package edu.nwmissouri.zoo05group;
 
 /**
+ * Badminton class (derived subclass of the superclass AbstractGame)
  *
  * @author S545243 Satheesh Eppalapelli
  */
-public class Badminton extends AbstractGame implements Runnable{
+public class Badminton extends AbstractGame implements Runnable {
 
     /**
      *
@@ -27,7 +28,7 @@ public class Badminton extends AbstractGame implements Runnable{
      */
     @Override
     public void game(String game_name) {
-          System.out.printf("I Like to play %s.\n", this.game_name);
+        System.out.printf("I Like to play %s.\n", this.game_name);
     }
 
     /**
@@ -79,6 +80,10 @@ public class Badminton extends AbstractGame implements Runnable{
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+    /**
+     *
+     * call this stocks() enum method to see which badminton stockes.
+     */
     public enum stockes {
         SERVES,
         CLEARS,

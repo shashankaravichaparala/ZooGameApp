@@ -5,7 +5,8 @@
 package edu.nwmissouri.zoo05group;
 
 /**
- *
+ * 
+ * Bingo class (derived subclass of the superclass AbstractGame)
  * @author S545243 Satheesh Eppalapelli
  */
 public class Bingo extends AbstractGame implements Runnable {

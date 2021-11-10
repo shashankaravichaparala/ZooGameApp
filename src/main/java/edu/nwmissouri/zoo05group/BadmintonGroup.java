@@ -3,7 +3,7 @@ package edu.nwmissouri.zoo05group;
 import java.util.ArrayList;
 
 /**
- * Provides methods to create and run a group of Badminton
+ * BadmintonGroup class (derived subclass of the superclass AbstractGame)
  *
  * @author S545243 Satheesh Eppalapelli
  */
