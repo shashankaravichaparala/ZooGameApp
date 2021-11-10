@@ -1,7 +1,6 @@
 # ZooGameApp
 Zoo simulation with games.
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1a15b98a091449af9a907124713826c2)](https://app.codacy.com/gh/satheesheppalapelli/ZooGameApp?utm_source=github.com&utm_medium=referral&utm_content=satheesheppalapelli/ZooGameApp&utm_campaign=Badge_Grade_Settings)
 [![Known Vulnerabilities](https://snyk.io/test/github/satheesheppalapelli/ZooGameApp/badge.svg)](https://snyk.io/test/github/satheesheppalapelli/ZooGameApp)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/51c43cd1ed734ac3af4c9576280f0208)](https://www.codacy.com/gh/satheesheppalapelli/ZooGameApp/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=satheesheppalapelli/ZooGameApp&amp;utm_campaign=Badge_Grade)
 
