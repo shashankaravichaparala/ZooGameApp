@@ -27,14 +27,14 @@ public class Badminton extends AbstractGame {
      */
     @Override
     public void game(String game_name) {
-          System.out.printf("I Like to play %s. \n", this.game_name);
+          System.out.printf("I Like to play %s.\n", this.game_name);
     }
 
     /**
      * call this player() method to see how many number of players are playing.
      */
     public void players() {
-        System.out.printf("Playing Badminton with %s players\n", this.number_of_players);
+        System.out.printf("Playing Badminton with %s players.\n", this.number_of_players);
     }
 
     /**
@@ -62,7 +62,7 @@ public class Badminton extends AbstractGame {
      */
     @Override
     public void rules() {
-        System.out.println("The court is rectangular and divided into halves by a net. Courts are usually marked for both singles and doubles play, although badminton rules permit a court to be marked for singles only");
+        System.out.println("The court is rectangular and divided into halves by a net. Courts are usually marked for both singles and doubles play, although badminton rules permit a court to be marked for singles only.");
 
     }
 
