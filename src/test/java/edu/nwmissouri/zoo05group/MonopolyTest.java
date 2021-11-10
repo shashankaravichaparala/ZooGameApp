@@ -11,7 +11,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 /**
- * Test Golf using JUnit5
+ * Test Monopoly using JUnit5
  *
  * @author s545030
  */
